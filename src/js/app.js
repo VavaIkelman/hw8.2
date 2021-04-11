@@ -13,10 +13,9 @@ export default class ErrorRepository {
   }
 
   translate(code) {
-    if (this.map.get(code)){
-        return this.map.get(code);
-    } 
-    return 'Unknown error'
+    if (this.map.get(code)) {
+      return this.map.get(code);
     }
-  
+    return 'Unknown error';
+  }
 }
